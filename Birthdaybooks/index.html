@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Birthday Books</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Birthday Books Form</h1>
+    <form>
+        <label>Date: </label><input type="date" name="todays-date" required>
+        <br>
+        <label>Child's Name: </label><input type="name" name="childs-name" required>
+        <br>
+        <label>Child's Birthday: </label><input type="date" name="birthday" required>
+        <br>
+        <label>Parent's Name: </label><input type="name" name="parents-name" required>
+        <br>
+        <label>Parent's Email: </label><input type="email" name="email-address" pattern="[a-zA-Z0-9.+-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}" required>
+        <br>
+        <input type="checkbox" name="form" value="form-request"> I wish to store the signed approval form on file
+        <br>
+        <select name="books" required>
+            <option value="The Cat in the Hat" selected>The Cat in the Hat</option>
+            <option value="Hop on Pop">Hop on Pop</option>
+            <option value="Harry Potter and the Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</option>
+            <option value="Charlotte's Web">Charlotte's Web</option>
+            <option value="Goodnight Moon">Goodnight Moon</option>
+        </select>
+        <br>
+        <textarea name="comment">Add any comments here</textarea>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+        <br>
+        <input type="button" name="clear" value="Clear">
+    </form>
+</body>
+</html>
